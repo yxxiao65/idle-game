@@ -1,10 +1,10 @@
 var score = 1; // Create a variable to store the score in
 
-var title = new Title('Clicker Game!'); // Create a title element
-var button = new Button('Click it!', btnPress);   // Create a button element
-var hidden = new Button('Hello!');
+var title = new Title('Lonely Island Gatherer!'); // Create a title element
+var button = new Button('Gather Wood!', btnPress);   // Create a button element
+var hidden = new Button('Gather Iron');
 hidden.hide();
-var hidden2 = new Button(':OvO:');
+var hidden2 = new Button('Gather Titanium Alloy');
 hidden2.hide();
 var scr = new Text(score);                    // Create a text element
 
