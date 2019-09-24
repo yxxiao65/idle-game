@@ -14,6 +14,21 @@ var scr2 = new Text(score2)
 
 
 
+
+var text1 = new Text('I will go in column 1');  // Create some text to go in the columns
+var text2 = new Text('I will go in column 2');
+
+var rowSection = new Section('row'); // Create the row to store the columns in
+var column1 = new Section('col');    // Create the first column
+var column2 = new Section('col');    // Create the second column
+
+rowSection.add(column1);  // Add the first column to the row
+rowSection.add(column2);  // Add the second column to the row
+
+column1.add(text1);  // Add the text to the first column
+column2.add(text2);  // Add the text to the second column
+
+
 setInterval(btnPress, 1000);   // Set up a loop
 
 
