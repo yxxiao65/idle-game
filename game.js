@@ -1,3 +1,4 @@
+
 var score = 1; // Create a variable to store the score in
 
 var title = new Title('Lonely Island Gatherer!'); // Create a title element
