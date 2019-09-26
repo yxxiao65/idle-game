@@ -5,7 +5,7 @@ var title = new Title('Lonely Island Gatherer!'); // Create a title element
 var button = new Button('Gather Wood!', btnPress);   // Create a button element
 //button.remove();
 var hidden = new Button('Gather Iron', btnPress);
-hidden.hide();
+hidden.hide();//hide the button
 var hidden2 = new Button('Gather Titanium Alloy', btnPress);
 hidden2.hide();
 var scr = new Text(score);                    // Create a text element
@@ -15,7 +15,7 @@ var scr2 = new Text(score2)
 
 
 
-
+//this not work as I expected, QAQ
 var text1 = new Text('I will go in column 1');  // Create some text to go in the columns
 var text2 = new Text('I will go in column 2');
 
@@ -41,9 +41,6 @@ function btnPress() {
     if(score > 10) {
     hidden.show();
   }
-    //if(score > 50) {
-    //hidden.hide(500);
-  //}
 
   if(score > 40) {
   hidden2.show();
@@ -67,7 +64,7 @@ button.hide();
 }
 
 if(score > 100) {
-scr.hide();
+scr.hide();//hide everything else after get 100
 }
 
 
