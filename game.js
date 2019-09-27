@@ -16,15 +16,8 @@ var scr2 = new Text(score2)
 
 
 //this not work as I expected, QAQ
-var text1 = new Text('I will go in column 1');  // Create some text to go in the columns
-var text2 = new Text('I will go in column 2');
-
-var rowSection = new Section('row'); // Create the row to store the columns in
-var column1 = new Section('col');    // Create the first column
-var column2 = new Section('col');    // Create the second column
-
-rowSection.add(column1);  // Add the first column to the row
-rowSection.add(column2);  // Add the second column to the row
+var text1 = new Text('Text1');  // Create some text to go in the columns
+var text2 = new Text('Text2');
 
 column1.add(text1);  // Add the text to the first column
 column2.add(text2);  // Add the text to the second column
@@ -35,36 +28,36 @@ setInterval(btnPress, 1000);   // Set up a loop
 
 function btnPress() {
   score++;         // Increase the score
-  scr.edit(score); // Update the page with the new score
+  scr.edit(score/4); // Update the page with the new score
 
 
-    if(score > 10) {
+    if(score > 40) {
     hidden.show();
   }
 
-  if(score > 40) {
+  if(score > 120) {
   hidden2.show();
   }
 
 
-  if(score > 100) {
+  if(score > 400) {
   hidden3.show();
   }
 
-  if(score > 40) {
+  if(score > 120) {
   hidden.hide();
 }
 
-  if(score > 100) {
+  if(score > 400) {
 hidden2.hide();
 }
 
-if(score > 10) {
+if(score > 40) {
 button.hide();
 }
 
-if(score > 100) {
-scr.hide();//hide everything else after get 100
+if(score > 400) {
+scr.hide();//hide every thing else after 100
 }
 
 
